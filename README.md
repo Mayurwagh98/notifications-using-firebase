@@ -1,8 +1,6 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Go to the Firebase Console: https://console.firebase.google.com/
+- Select your project.
+- Navigate to Project Settings.
+- In the Project Settings, click on the "Cloud Messaging" tab.
+- You will find the "Server key" under the "Project credentials" section.
+- if you are not receving notfications then check if your system has allowed the notifications or not -> go to settings and allow notifications
