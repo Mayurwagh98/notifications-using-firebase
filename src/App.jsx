@@ -24,7 +24,7 @@ function App() {
   };
   // const messaging = getMessaging();
 
-  // sending notifications using token
+  // sending notifications using api
   const postData = async () => {
     const payload = {
       to: saveToken,
