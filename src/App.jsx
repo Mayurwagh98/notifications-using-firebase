@@ -59,7 +59,7 @@ function App() {
     //when user's tab is on then this function will show the notification
     onMessage(messaging, (payload) => {
       // console.log("Message received. ", payload);
-      alert(payload.notification.title);
+      alert(payload.notification.title + '\n' + payload.notification.body);
     });
 
   }, [saveToken]);
