@@ -9,5 +9,6 @@
 - Go to Project Settings
 - Select `Cloud Messaging`
 - Enabled the `Cloud Messaging API`
+
   ![Screenshot (3)](https://github.com/Mayurwagh98/notifications-using-firebase/assets/69896733/90458e5e-7ddc-4f7f-93e5-d1a75cd7753e)
 
