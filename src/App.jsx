@@ -24,36 +24,33 @@ function App() {
   };
   // const messaging = getMessaging();
 
-  // const postData = async () => {
-  //   const payload = {
-  //     to: saveToken,
-  //     notification: {
-  //       title: "Testing firebase",
-  //       body: "hey there",
-  //     },
-  //     data: {
-  //       key1: "value1",
-  //       key2: "value2",
-  //     },
-  //   };
+  // sending notifications using token
+  const postData = async () => {
+    const payload = {
+      to: saveToken,
+      notification: {
+        title: "Testing firebase",
+        body: "hey there",
+      }
+    };
 
-  //   const headers = {
-  //     "Content-Type": "application/json",
-  //     Authorization:
-  //       "BFB748QNkYHXE0lIFoyOazocDvviFjSrh2KiJKu032W3W0c7PxJ4Y0xax3D3cJ_p6CQ3PGK2DoKRq2Ar4qURXnI",
-  //   };
+    const headers = {
+      "Content-Type": "application/json",
+      Authorization:
+        "key=AAAA8dstDXk:APA91bH-eAnuhPuWz-8HGNxReKd_5W0J6mX8kuBYabzBEI3z-PymzuZ9G8YLPDIO6rXbAbIk9_Ewtmdz5fE4P01pJvF_y7p_owoFuWVbrcoTr_pcD_RpJRX6CPxM0UDlQOCGOGGtpOng",
+    };
 
-  //   try {
-  //     const { data } = await axios.post(
-  //       "https://fcm.googleapis.com/fcm/send",
-  //       payload,
-  //       { headers }
-  //     );
-  //     console.log(data);
-  //   } catch (error) {
-  //     console.error("Error sending notification:", error);
-  //   }
-  // };
+    try {
+      const { data } = await axios.post(
+        "https://fcm.googleapis.com/fcm/send",
+        payload,
+        { headers }
+      );
+      console.log(data);
+    } catch (error) {
+      console.error("Error sending notification:", error);
+    }
+  };
 
   useEffect(() => {
     // request user for permission
@@ -65,14 +62,11 @@ function App() {
       alert(payload.notification.title);
     });
 
-    // if (saveToken !== "") {
-    //   postData();
-    // }
   }, [saveToken]);
   return (
     <>
       <ToastContainer />
-      {/* <button onClick={postData}>Notify</button> */}
+      <button onClick={postData}>Notify</button>
     </>
   );
 }
