@@ -10,5 +10,6 @@
 - Select `Cloud Messaging`
 - Enabled the `Cloud Messaging API`
 
-  ![Screenshot (3)](https://github.com/Mayurwagh98/notifications-using-firebase/assets/69896733/90458e5e-7ddc-4f7f-93e5-d1a75cd7753e)
+  ![Screenshot (3)](https://github.com/Mayurwagh98/notifications-using-firebase/assets/69896733/eb9c1815-5c14-4ec4-888b-9e2fea72fbc5)
+
 
