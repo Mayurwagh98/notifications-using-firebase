@@ -8,7 +8,7 @@
 - To integrate the notifications using api you need to make these changes
 - Go to Project Settings
 - Select `Cloud Messaging`
-- Enabled the `Cloud Messaging API`
+- Enable the `Cloud Messaging API`
 
   ![Screenshot (3)](https://github.com/Mayurwagh98/notifications-using-firebase/assets/69896733/eb9c1815-5c14-4ec4-888b-9e2fea72fbc5)
 
